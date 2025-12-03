@@ -1,0 +1,12 @@
+## ARRAYS: Problem 1
+#Arrays for the sum of two integers resulting to the target integer.
+variables: A list, target number
+Begin
+    initialize num_map = {}
+    for i,current_number in enumerate(nums):
+        complement = target - current_number
+        if complement in num_map:
+            return [num_map[complement],i]
+        num_map[current_number]=i
+    return []
+end
