@@ -10,3 +10,26 @@ Begin
         num_map[current_number]=i
     return []
 end
+
+
+PROBLEM 2:
+Finding the subarray with the largest sum from a integer array nums
+
+variables: list of integers,the greatest sum of two integers.
+Begin
+function max_subarray_sum(nums):
+    if nums is empty:
+        return o
+    initialize:
+    global_max = nums[0]
+    current_max = nums[0]
+    iteration:
+    for i from 1 to length(nums) -1:
+        current_num = nums(i)
+    update the global and current_max:
+    current_max = Max(current_num,current_max + current_num)
+
+    if current_max > global_max:
+        global_max = current_max
+    return global_max
+End
